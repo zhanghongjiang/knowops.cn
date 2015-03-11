@@ -28,7 +28,7 @@ p {
   .parallax-container .section {
     width: 100%;
   }
-.parallax img{background-size: cover;}
+/*.parallax img{background-size: cover;}*/
 
 @media only screen and (max-width : 992px) {
   .parallax-container .section {
