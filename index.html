@@ -8,8 +8,27 @@
   <!-- CSS  -->
   <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/jquery.reject.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+  <script src="js/jquery.reject.js"></script>
+  <script>
+  function checkB(){  
+    $.reject({  
+        // reject: { all: true }, // Reject all renderers for demo  
+        close: false, // Prevent closing of window  
+        header:'您使用的IE浏览器版本过低，您可以：',
+        paragraph1: '1，访问本站截图'+'<a href="knowops.png">点此打开</a>', // Warning about closing  
+        display:['chrome','firefox'],
+        paragraph2:  '2，或采用如下两款浏览器'  
+    });  
+   
+  
+    return false;  
+ }
+  </script>
+
 </head>
-<body>
+<body onload="checkB()">
   <!-- <nav class="grey lighten-4" role="navigation">
     <div class="nav-wrapper container">
       <a id="logo-container" href="#" class="brand-logo teal-text">Knowops</a>
@@ -335,9 +354,7 @@
 
 
   <!--  Scripts-->
-  <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
   <script src="js/materialize.js"></script>
   <script src="js/init.js"></script>
-
   </body>
 </html>
