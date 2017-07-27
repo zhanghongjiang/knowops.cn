@@ -1,361 +1,293 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
-  <title>knowops</title>
+<html>
 
-  <!-- CSS  -->
-  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-  <link href="css/jquery.reject.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-  <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
-  <script src="js/jquery.reject.js"></script>
-  <script>
-  function checkB(){  
-    $.reject({  
-        // reject: { all: true }, // Reject all renderers for demo  
-        close: false, // Prevent closing of window  
-        header:'您使用的IE浏览器版本过低，您可以：',
-        paragraph1: '1，访问本站截图'+'<a href="knowops.png">点此打开</a>', // Warning about closing  
-        display:['chrome','firefox'],
-        paragraph2:  '2，或采用如下两款浏览器'  
-    });  
-   
-  
-    return false;  
- }
-  </script>
+  <head>
+	<meta name="generator" content="Hugo 0.17" />
+    <title>Adventure Time!</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="description" content="Adventure Time is an American animated television series created by Pendleton Ward for Cartoon Network. The series follows the adventures of Finn, a human boy, and his best friend and adoptive brother Jake, a dog with magical powers to change shape and grow and shrink at will. Finn and Jake live in the post-apocalyptic Land of Ooo. Along the way, they interact with the other main characters of the show: Princess Bubblegum, The Ice King, and Marceline the Vampire Queen." />
 
+    <meta name="keywords" content="adventure time,cartoon network,cartoons,finn,jake,princess bubblegum" />
+    
+    <script src="http://example.comassets/js/jquery.min.js"></script>
+    <script src="http://example.comassets/js/skel.min.js"></script>
+    <script src="http://example.comassets/js/skel-layers.min.js"></script>
+    <script src="http://example.comassets/js/init.js"></script>
+    <link rel="stylesheet" href="http://example.comassets/css/skel.css" />
+    <link rel="stylesheet" href="http://example.comassets/css/style.css" />
+    <link rel="stylesheet" href="http://example.comassets/css/style-desktop.css" />
+    
+    <link rel="alternate" type="application/rss+xml" title="Adventure Time!" href="http://example.com/index.xml" />
 </head>
-<body>
-  <!-- <nav class="grey lighten-4" role="navigation">
-    <div class="nav-wrapper container">
-      <a id="logo-container" href="#" class="brand-logo teal-text">Knowops</a>
-      <ul class="right">
-        <li><a href="#">We know OPS more</a></li>
-      </ul>
 
-      <ul id="nav-mobile" class="side-nav">
-        <li><a href="#">Knowops</a></li>
-      </ul>
-      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
-    </div>
-  </nav> -->
-  <script>checkB();</script>
-  <nav>
-  <div class="container">
-    <h5 class="left">Knowops</h5>
-    <div class="right">We know ops more</div>
-  </div>
-</nav>
-  <div id="index-banner" class="parallax-container">
-    <div class="section no-pad-bot">
-      <div class="container">
-        <br><br>
-        <h1 class="header center teal-text text-lighten-2">运维，我们最懂</h1>
-        <div class="row center">
-          <h4 class="header col s12 light">及时发现性能瓶颈，让业务时刻运转如飞</h4>
-        </div>
-<!--         <div class="row center">
-          <a href="http://materializecss.com/getting-started.html" id="download-button" class="btn-large waves-effect waves-light teal lighten-1"><br>
-            Get Started</a>
-        </div>
-        <br><br> -->
 
-      </div>
-    </div>
-    <div class="parallax"><img src="background1.jpg" alt="We know ops more"></div>
-  </div>
+  <body>
 
-  <div class ="teal lighten-4">
-  <div class="container">
-    <div class="section">
-
-      <!--   Icon Section   -->
-      <div class="row">
-        <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center brown-text"><i class="mdi-image-flash-on"></i></h2>
-            <h5 class="center brown-text">关键业务性能监控</h5>
-
-            <p class="light">在完全不影响现有系统正常工作的情况下，通过对系统网络流量镜像数据的实时分析，实时图形化显示诸如交易成功率、响应时间、交易数量、业务流量等关键指标，结合灵活的多维关联分析，实现对业务过程端到端的监控。</p>
-          </div>
-        </div>
-
-        <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center brown-text"><i class="mdi-communication-import-export"></i></h2>
-            <h5 class="center brown-text">网络中间件性能监控</h5>
-
-            <p class="light">通过对典型中间件（如Tomcat、JBoss，Weblogic、Websphere、Tuxedo、TongLINK，MySQL、Oracle、SQLServer）之间通讯协议的监控和分析，帮助运维和开发人员实时发现并定位系统性能瓶颈，从而对系统优化做到有的放矢。</p>
-          </div>
-        </div>
-
-        <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center brown-text"><i class="mdi-action-settings"></i></h2>
-            <h5 class="center brown-text">运维自动化</h5>
-
-            <p class="light">把运维人员从传统的运维方式中解放出来，Knowops帮助企业全面促进运维工作的自动化，减少人工，提升质量：系统正常运行时，有故障预警，有效避免故障发生；系统发生故障时，能自动诊断、快速定位，降低故障恢复时间。</p>
-          </div>
-        </div>
-      </div>
-
-    </div>
-
-  </div>
-</div>
-
-  <div class="parallax-container valign-wrapper">
-    <div class="section no-pad-bot">
-      <div class="container">
-        <div class="row center">
-          <h1 class="header center teal-text text-lighten-2">价格，公开透明</h1>
-          <h4 class="header col s12 light">这就是最低价。没有隐藏或意外成本。</h4>
-        </div>
-      </div>
-    </div>
-    <div class="parallax"><img src="background1.jpg" alt="价格公开透明"></div>
-  </div>
-
-  <div class="container">
-    <div class="section">
-
-      <!--   Icon Section   -->
-      <div class="row">
-        <div class="col s12 m6">
-          <div class="icon-block">
-            <h2 class="center brown-text"><i class="mdi-action-shopping-cart"></i></h2>
-            <h5 class="center brown-text">购买</h5>
-            <p>选择你需要的配置，一次性买断。一年内所有维保免费。一年后，大的协议升级需付费，其它服务按售后标准进行。</p>
-          </div>
-        </div>
-
-        <div class="col s12 m6">
-          <div class="icon-block">
-            <h2 class="center brown-text"><i class="mdi-device-access-alarms"></i></h2>
-            <h5 class="center brown-text">租用</h5>
-
-            <p>选择你需要的配置，按使用时长收费。期满后，可以续租或停用。原有协议升级免费，但增加新的协议需额外付费。</p>
-          </div>
-        </div>
-    </div>
-    <form action="#">
-        <table class="bordered">
-        <thead class="red lighten-4">
-            <th>类目</th>
-            <th>协议</th>
-            <th>购买价格（元）</th>
-            <th>租用价格（元/年）</th>
-          </thead>
-
-        <tbody>
-          
-          <tr>
-              <td rowspan="3">基础盒子（必选）</td>
-              <td><input type="checkbox" id="stand1" value="80000" rent="20000" checked="checked" />
-              <label for="stand1">5个千兆监测口</label></td>
-              <td>80,000</td>
-              <td>20,000</td>
-          </tr>
-          <tr>
-              <td><input type="checkbox" id="stand2" value="100000" rent="25000" />
-              <label for="stand2">9个千兆监测口</label></td>
-              <td>100,000</td>
-              <td>25,000</td>
-          </tr>
-          <tr>
-              <td><input type="checkbox" id="stand3" value="150000" rent="40000" />
-              <label for="stand3">5个千兆监测口+2个万兆监测口</label></td>
-              <td>150,000</td>
-              <td>40,000</td>
-          </tr>
-          <tr class="lime lighten-5">
-              <td rowspan="4">银行业</td>
-              <td><input type="checkbox" id="finance2" value="10000" rent="2000"/>
-              <label for="finance2">银联8583</label></td>
-              <td>10,000</td>
-              <td>2,000</td>
-          </tr>
-          <tr class="lime lighten-5">
-              <td><input type="checkbox" id="finance3" value="10000" rent="2000"/>
-              <label for="finance3">人行二代支付</label></td>
-              <td>10,000</td>
-              <td>2,000</td>
-          </tr>
-          <tr class="lime lighten-5">
-              <td><input type="checkbox" id="finance4" value="10000" rent="2000"/>
-              <label for="finance4">城商行支付清算</label></td>
-              <td>10,000</td>
-              <td>2,000</td>
-          </tr>
-          <tr class="lime lighten-5">          
-              <td><input type="checkbox" id="finance5" value="10000" rent="2000"/>
-              <label for="finance5">同城支付清算</label></td>
-              <td>10,000</td>
-              <td>2,000</td>
-          </tr>
-
-          <tr>
-              <td rowspan="5">基础协议</td>
-              <td><input type="checkbox" id="protocol1" value="10000" rent="2000"/>
-              <label for="protocol1">HTTP</label></td>
-              <td>10,000</td>
-              <td>2,000</td>
-          </tr>
-          <tr>
-              <td><input type="checkbox" id="protocol2" value="10000" rent="2000"/>
-              <label for="protocol2">Websphere MQ</label></td>
-              <td>10,000</td>
-              <td>2,000</td>
-          </tr>
-          <tr>
-              <td><input type="checkbox" id="protocol3" value="10000" rent="2000"/>
-              <label for="protocol3">MySQL</label></td>
-              <td>10,000</td>
-              <td>2,000</td>
-          </tr>
-          <tr>
-              <td><input type="checkbox" id="protocol4" value="10000" rent="2000"/>
-              <label for="protocol4">Memocached</label></td>
-              <td>10,000</td>
-              <td>2,000</td>
-          </tr>
-          <tr>          
-              <td><input type="checkbox" id="protocol5" value="10000" rent="2000"/>
-              <label for="protocol5">Tuxedo</label></td>
-              <td>10,000</td>
-              <td>2,000</td>
-          </tr>
-
-           <tr class="red lighten-4"> 
-              <td>购买总价</td>         
-              <td></td>
-              <td id="buytotal">80,000</td>
-              <td></td>
-          </tr>
-             <tr class="purple lighten-5"> 
-              <td>租用总价</td>         
-              <td><lable>时长</label><select id="year">
-                  <option value="1" selected>1年</option>
-                  <option value="1.8">2年（九折）</option>
-                  <option value="2.4">3年（八折）</option>
-                  <option value="3.5">5年（七折）</option>
-                  </select></td>
-                  <td></td>
-              <td id="renttotal">20000</td>
-          </tr>
-        </tbody>
-      </table>
-    </form>
-  </div>
-</div>
+    
+<div id="header-wrapper">
+    <div id="header">
 
         
+            <h1><a href="/">Adventure Time!</a></h1>
+        
+        <nav id="nav">
+            <ul>
+                
+                
+                    <li><a href="/">Home</a></li>
+                
+                    <li><a href="/posts">Posts</a></li>
+                
+                    <li><a href="/about/">About</a></li>
+                
+                    <li><a href="/contact/">Contact</a></li>
+                
+            </ul>
+        </nav>
 
-  <div class="parallax-container valign-wrapper">
-    <div class="section no-pad-bot">
-      <div class="container">
-        <div class="row center">
-          <h1 class="header center teal-text text-lighten-2">服务，贴心实惠</h1>
-          <h4 class="header col s12 light">我们提供分级的售后服务，满足你不同业务需求</h4>
-        </div>
-      </div>
-    </div>
-    <div class="parallax"><img src="background3.jpg" alt="服务贴心实惠"></div>
-  </div>
+        
+        
+            <section id="banner">
+                <header>
+                    <h2>Explore the Land of Ooo...</h2>
+                    <p>...and its many kingdoms!</p>
+                </header>
+            </section>
+        
 
-<div class ="teal lighten-4">
-  <div class="container">
-    <div class="section">
-
-      <!--   Icon Section   -->
-      <div class="row">
-        <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center brown-text"><i class="mdi-communication-message"></i></h2>
-            <h5 class="center brown-text">远程协助</h5>
-
-            <p class="light">这是首选的解决方案，我们会通过电话、QQ、微信、远程桌面等方式帮你解决问题。免费。</p>
-          </div>
-        </div>
-
-        <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center brown-text"><i class="mdi-action-swap-horiz"></i></h2>
-            <h5 class="center brown-text">邮寄</h5>
-
-            <p class="light">若远程协助无法解决问题，请把产品邮寄给我们，我们给予更换或维修后，再邮寄回去。一次1000元。</p>
-          </div>
-        </div>
-
-        <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center brown-text"><i class="mdi-social-person-outline"></i></h2>
-            <h5 class="center brown-text">现场解决</h5>
-
-            <p class="light">若有特殊需要，我们会派驻工程师现场解决。工程师费用按1000元/天计算，另加差旅费。</p>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</div>
-
-
-<div class="parallax-container valign-wrapper">
-    <div class="section no-pad-bot">
-      <div class="container">
-        <div class="row center">
-          <h1 class="header center cyan-text text-lighten-2">拥抱未来</h1>
-          <h4 class="header col s12 light">联系我们，Knowops帮助你走向更美好的明天</h4>
-        </div>
-      </div>
-    </div>
-    <div class="parallax"><img src="background4.jpg" alt="拥抱未来"></div>
-  </div>
-
-<div class="container">
-     <div class="row">
-        <div class="col s12 m6">
-          <div class="icon-block">
-            <h2 class="center brown-text"><i class="mdi-action-account-child"></i></h2>
-            <h5 class="center brown-text">关于我们</h5>
-            <p>Knowops是新一代网络性能监控产品，融合了当今业界最领先的深度包还原、流式计算、大数据技术，产品极其简单和优雅，可以开箱即用。此外，我们首创业界租用模式，让你以极低的价格即可享受一流的服务。</p>
-          </div>
-        </div>
-
-        <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center brown-text"><i class="mdi-content-send"></i></h2>
-            <h5 class="center brown-text">联系我们</h5>
-
-            <p class="right">电话：13521045749<br>
-                邮箱：support@knowops.cn<br>
-                微信：tiger29294629<br>
-                QQ号：29294629</p>
-          </div>
-        </div>
     </div>
 </div>
 
 
-  
-      
-  <footer class="page-footer grey lighten-5">
-    <div class="footer-copyright teal">
-      <div class="container center">
-      北京瞬时网络科技有限公司 ©2015 Knowops
-      </div>
+    
+    <div id="main-wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="12u">
+
+                    
+                        <section>
+                            <header class="major">
+                                <h2>Characters</h2>
+                            </header>
+                            <div class="row">
+                            
+                                <div class="4u">
+                                    <section class="box">
+                                        <span class="image featured"><img src="forestryio/images/finn.jpg" alt="" /></span>
+                                        <header>
+                                            <h3>Finn the Human</h3>
+                                        </header>
+                                        <p>Finn is a 15-year-old human. He is roughly five feet tall and is missing several teeth due to his habit of biting trees and rocks among other things.</p>
+                                    </section>
+                                </div>
+                            
+                                <div class="4u">
+                                    <section class="box">
+                                        <span class="image featured"><img src="forestryio/images/jake.jpg" alt="" /></span>
+                                        <header>
+                                            <h3>Jake the Dog</h3>
+                                        </header>
+                                        <p>Jake can morph into all sorts of fantastic shapes with his powers, but typically takes the form of an average sized yellow-orange bulldog.</p>
+                                    </section>
+                                </div>
+                            
+                                <div class="4u">
+                                    <section class="box">
+                                        <span class="image featured"><img src="forestryio/images/bubblegum.jpg" alt="" /></span>
+                                        <header>
+                                            <h3>Princess Bubblegum</h3>
+                                        </header>
+                                        <p>Princess Bubblegum loves (most of) her subjects and defends them tirelessly when trouble brews and is perhaps the most intelligent person in the Land of Ooo.</p>
+                                    </section>
+                                </div>
+                            
+                                <div class="4u">
+                                    <section class="box">
+                                        <span class="image featured"><img src="forestryio/images/iceking.jpg" alt="" /></span>
+                                        <header>
+                                            <h3>Ice King</h3>
+                                        </header>
+                                        <p>Ice King, formerly Simon Petrikov, is a blue-skinned, elderly man with unusually pointy fingers, pointy toes, sharp teeth, and a long, goblin-like nose.</p>
+                                    </section>
+                                </div>
+                            
+                                <div class="4u">
+                                    <section class="box">
+                                        <span class="image featured"><img src="forestryio/images/lsp.jpg" alt="" /></span>
+                                        <header>
+                                            <h3>Lumpy Space Princess</h3>
+                                        </header>
+                                        <p>Lumpy Space Princess (LSP) acts like a bratty, apathetic, sassy, attention-seeking and willfully ignorant teenager, often texting on her phone.</p>
+                                    </section>
+                                </div>
+                            
+                                <div class="4u">
+                                    <section class="box">
+                                        <span class="image featured"><img src="forestryio/images/marceline.jpg" alt="" /></span>
+                                        <header>
+                                            <h3>Marceline</h3>
+                                        </header>
+                                        <p>Marceline is over a thousand years old. Centuries of wandering the Land of Ooo have made her a fearless daredevil and a a lover of all things exotic.</p>
+                                    </section>
+                                </div>
+                            
+                            </div>
+                        </section>
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="12u">
+
+                    
+                        <section>
+                            <header class="major">
+                                <h2>Recent Episodes</h2>
+                            </header>
+                            <div class="row">
+                            
+                                <div class="6u">
+                                    <section class="box">
+                                        <a href="http://example.com/posts/season-6-food-chain/" class="image featured"><img src="http://example.comforestryio/images/foodchain.jpg" alt="" /></a>
+                                        <header>
+                                            <h3>Food Chain (Season 6)</h3>
+                                            <p>Posted Jun 12,2014</p>
+                                        </header>
+                                        <p><p>The episode begins with candy children that have bodies resembling different shapes sliding down a slide, shouting with excitement. The kids are viewed from an horizontal angle in the next scene as they go through a playground-like structure. Finn and Jake are examining the &lsquo;Catapilla Family&rsquo;. After watching Princess Bubblegum teach the children about the Food Chain, they head to the snack bar as Finn found Princess Bubblegum&rsquo;s class useless.</p></p>
+                                        <footer>
+                                            <ul class="actions">
+                                                <li><a href="http://example.com/posts/season-6-food-chain/" class="button icon fa-file-text">Continue Reading</a></li>
+                                            </ul>
+                                        </footer>
+                                    </section>
+                                </div>
+                            
+                                <div class="6u">
+                                    <section class="box">
+                                        <a href="http://example.com/posts/season-6-breezy/" class="image featured"><img src="http://example.comforestryio/images/breezy.jpg" alt="" /></a>
+                                        <header>
+                                            <h3>Breezy (Season 6)</h3>
+                                            <p>Posted Jun 5,2014</p>
+                                        </header>
+                                        <p></p>
+                                        <footer>
+                                            <ul class="actions">
+                                                <li><a href="http://example.com/posts/season-6-breezy/" class="button icon fa-file-text">Continue Reading</a></li>
+                                            </ul>
+                                        </footer>
+                                    </section>
+                                </div>
+                            
+                            </div>
+                        </section>
+
+                </div>
+            </div>
+        </div>
     </div>
 
-  </footer>
+    
+<div id="footer-wrapper">
+    <section id="footer" class="container">
+        <div class="row">
+            <div class="8u">
+                <section>
+                    <header>
+                        <h2>More Episodes</h2>
+                    </header>
+                    <ul class="dates">
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                        <li>
+                            <span class="date">Jun<strong>12</strong></span>
+                            <h3><a href="http://example.com/posts/season-6-food-chain/">Food Chain (Season 6)</a></h3>
+                            <p>Finn and Jake learn about the food chain by becoming the food chain.</p>
+                        </li>
+                        
+                    
+                        
+                        <li>
+                            <span class="date">Jun<strong>5</strong></span>
+                            <h3><a href="http://example.com/posts/season-6-breezy/">Breezy (Season 6)</a></h3>
+                            <p>Finn decides to get back into the dating game to help his wilting arm flower.</p>
+                        </li>
+                        
+                    
+                        
+                        <li>
+                            <span class="date">May<strong>12</strong></span>
+                            <h3><a href="http://example.com/posts/season-6-sad-face/">Sad Face (Season 6)</a></h3>
+                            <p>While Jake is asleep, his tail goes to work as a clown in a traveling bug circus.</p>
+                        </li>
+                        
+                    
+                        
+                        <li>
+                            <span class="date">May<strong>5</strong></span>
+                            <h3><a href="http://example.com/posts/season-6-the-tower/">The Tower (Season 6)</a></h3>
+                            <p>Finn is not happy with his replacement arm.</p>
+                        </li>
+                        
+                    
+                        
+                        <li>
+                            <span class="date">Apr<strong>28</strong></span>
+                            <h3><a href="http://example.com/posts/season-6-james-ii/">James II (Season 6)</a></h3>
+                            <p>Finn and Jake discover that Clone James has been faking his own death.</p>
+                        </li>
+                        
+                    
+                        
+                        <li>
+                            <span class="date">Apr<strong>21</strong></span>
+                            <h3><a href="http://example.com/posts/season-6-escape-the-citadel/">Escape from the Citadel (Season 6)</a></h3>
+                            <p>Finn and Jake follow the Lich to the Citadel, where Finn meets his long lost dad.</p>
+                        </li>
+                        
+                    
+                        
+                        <li>
+                            <span class="date">Apr<strong>21</strong></span>
+                            <h3><a href="http://example.com/posts/season-6-wake-up/">Wake Up (Season 6)</a></h3>
+                            <p>Prismo helps Finn and Jake access the Crystal Citadel to meet Finn&#39;s father.</p>
+                        </li>
+                        
+                    
+                    </ul>
+                </section>
+            </div>
+            <div class="4u">
+                <section>
+                    <header>
+                        <h2>What's this all about?</h2>
+                    </header>
+                    <a href="#" class="image featured"><img src="http://example.comforestryio/images/about.jpg" alt="" /></a>
+                    <p>Adventure Time is an American animated television series created by Pendleton Ward for Cartoon Network. The series follows the adventures of Finn, a human boy, and his best friend and adoptive brother Jake, a dog with magical powers to change shape and grow and shrink at will. Finn and Jake live in the post-apocalyptic Land of Ooo. Along the way, they interact with the other main characters of the show: Princess Bubblegum, The Ice King, and Marceline the Vampire Queen.</p>
+                </section>
+            </div>
+        </div>
+        <div class="row">
+            <div class="12u">
+
+                
+                    <div id="copyright">
+                        <ul class="links">
+                            <li>&copy; Adventure Time!. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+                        </ul>
+                    </div>
+
+            </div>
+        </div>
+    </section>
+</div>
 
 
-  <!--  Scripts-->
-  <script src="js/materialize.js"></script>
-  <script src="js/init.js"></script>
   </body>
+
 </html>
